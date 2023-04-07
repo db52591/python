@@ -21,7 +21,7 @@ def AskRatio():
     window = tk.Toplevel()
 
     # Add a label to the window
-    label1 = tk.Label(window, text="Since some times you may want to set the first page ratio different from the rest, you know what i'm saying ,\nso enter two ratios, thats it (enter the page ratio), BTW you can use mac preview app to draw to find the ratio\n")
+    label1 = tk.Label(window, text="Since some times you may want to set the first page ratio different\n from the rest, you know what i'm saying ,\nso enter two ratios, thats it (enter the page ratio), \nBTW you can use mac preview app to draw to find the ratio\n")
     label1.pack()
 
     # Add another label to the window for the first expression
