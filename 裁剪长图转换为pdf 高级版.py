@@ -1,11 +1,5 @@
 # coding=utf-8
 
-# 题目：长截图按照制定比例裁切成pdf
-# 参考：chatgpt.之前做过的简单版。
-# 需求背景：有些ppt长截图无法好好裁切。
-# 使用方法：运行。会问我选文件地址，写第一页的比例和第二页的比例。
-# 更新：新增可裁剪长图pdf的方法
-
 
 import sys      # 给保存pdf使用
 from PIL import Image   # 要装模组 pip install pillow    给保存pdf使用
@@ -22,14 +16,12 @@ import fitz
 from PIL import Image
 
 
-
-
 def AskRatio():
     # Create a new window
     window = tk.Toplevel()
 
     # Add a label to the window
-    label1 = tk.Label(window, text="因为有时长截图截取时获得的第一页和后续页面的高度不是一致的，\n所以请输入两个比例，即页面比例，mac可预览划出比例显示\niphone 7plus 为1920/1080")
+    label1 = tk.Label(window, text="Since some times you may want to set the first page ratio different from the rest, you know what i'm saying ,\nso enter two ratios, thats it (enter the page ratio), BTW you can use mac preview app to draw to find the ratio\n")
     label1.pack()
 
     # Add another label to the window for the first expression
